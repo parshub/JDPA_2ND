@@ -1,0 +1,128 @@
+
+<!doctype html>
+<!-- Newly updated version -->
+<html ng-app="qaApp">
+
+<head>
+    <title>QA Script Automation</title>
+    <!--This Link for title Icon-->
+    <link rel="icon" href="images/title.png" width="10" height="10" type="image/x-icon">
+
+    <!-- Jquery JS -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js" type="text/javascript"></script>
+
+    <!--Angular JS-->
+    <script src="./bower_components/angular/angular.min.js" type="text/javascript"></script>
+    <script src="./bower_components/angular-route/angular-route.min.js" type="text/javascript"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- Application JS-->
+    <script src="./js/app.js" type="text/javascript"></script>
+    <script src="./js/fileController.js" type="text/javascript"></script>
+    <script src="./js/questionController.js" type="text/javascript"></script>
+    <script src="./js/questionMobileController.js" type="text/javascript"></script>
+    <script src="./js/testcaseController.js" type="text/javascript"></script>
+    <script src="./js/editQuestionController.js" type="text/javascript"></script>
+    <script src="./js/editTestcaseController.js" type="text/javascript"></script>
+    <script src="./js/runForWebController.js" type="text/javascript"></script>
+    <script src="./js/runForMobileController.js" type="text/javascript"></script>
+    <script src="./js/reportController.js" type="text/javascript"></script>
+    <script src="./js/services.js" type="text/javascript"></script>
+
+    <!-- Bootstrap, wijmo and custom css -->
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!-- header part -->
+            <div class="col-xs-12 col-md-12">
+                <div class="well panel text-center">
+                           <image src="images/logo.png" class="pull-left" alt="200x200" width="120" height="35"></image>
+                            <h4><b id="survey-name">JDPA Survey</b></h4>
+                </div>
+            </div>
+        </div>
+        <!-- body part -->
+        <!--<div ng-view></div>-->
+        <div class="row">
+            <div class="col-sm-3 col-md-2 my-sidebar">
+                <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
+                    <li role="presentation" data-toggle="pill">
+                        <a class="list-group-item" data-toggle="dropdown" aria-expanded="true">
+                            Create Question&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="drop6">
+                            <li><a role="menuitem" tabindex="-1" href="#/file/Question/Web">For Web</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li><a role="menuitem" tabindex="-1" href="#/file/Question/Mobile">For Mobile</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li role="presentation" data-toggle="pill">
+                        <a class="list-group-item" data-toggle="dropdown" aria-expanded="true">
+                            Edit&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="drop6">
+                                <li><a role="menuitem" tabindex="-1" href="#/edit/Question">Questions</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li><a role="menuitem" tabindex="-1" href="#/edit/Testcase">Testcases</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li role="presentation" data-toggle="pill">
+                        <a class="list-group-item" data-toggle="dropdown" aria-expanded="true">
+                            Generate Test&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="drop6">
+                            <li><a role="menuitem" tabindex="-1" href="#/file/Testcase/Web">For Web</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li><a role="menuitem" tabindex="-1" href="#/file/Testcase/Mobile">For Mobile</a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation" data-toggle="pill">
+                        <!--<a href="#/run" class="list-group-item">
+                            Run
+                        </a>-->
+                        <a class="list-group-item" data-toggle="dropdown" aria-expanded="true">
+                            Run&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="drop6">
+                            <li><a role="menuitem" tabindex="-1" href="#/run/Web">For Web</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li><a role="menuitem" tabindex="-1" href="#/run/Mobile">For Mobile</a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation" data-toggle="pill">
+                        <a href="#/report" class="list-group-item">
+                            Report
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <center>
+                <p class="text-muted">Copyright &copy; 2015 <b> <a style="color:#000;" onMouseOver="this.style.color='#000'"
+  onMouseOut="this.style.color='#000'" href="http://www.atmecs.com/">ATMECS Technologies Pvt. Ltd.</a> </b> All Rights Reserved Version 1.0</p>
+            </center>
+        </div>
+    </footer>
+
+</body>
+
+</html>

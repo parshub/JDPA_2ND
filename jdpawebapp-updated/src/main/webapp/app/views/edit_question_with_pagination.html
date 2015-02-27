@@ -1,0 +1,110 @@
+<div class="col-12">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-2 col-md-2-survey-name-container">
+                <!--<select class="form-control">
+                    <option role="presentation" class="dropdown-header">Survey</option>
+                    <option ng-repeat="name in surveyNames">{{ name }}</option>
+                </select>-->
+                <select class="form-control" ng-model="name" ng-change="changeSurveyNameSelect(name)" ng-options="name for name in surveyNames">
+                    <option role="presentation" class="dropdown-header" value="">Select Survey</option>
+                </select>
+                <div class="input-group" style="margin-top:10px">
+                    <span class="input-group-addon">Total number of questions
+                    </span>
+                    <label type="text" class="form-control" aria-describedby="basic-addon2">{{ totalNumberOfQuestions }}</label>
+                </div>
+                <div class="input-group" style="margin-top:10px">
+                    <input type="text" class="form-control" name="textbox" placeholder="Question(Q1)" ng-model="questionNumber" aria-describedby="basic-addon2" required>
+                    <span class="btn input-group-addon" ng-click="getQuestionJSONToEdit(questionNumber)">Press
+                    </span>
+                </div>
+            </div>
+            <!-- end of col-md-2 -->
+            <div class="col-md-2 show">
+                <!--<select class="form-control">
+                    <option role="presentation" class="dropdown-header default">Testcases</option>
+                    <option ng-repeat="name in testcaseNames">{{ name }}</option>
+                </select>-->
+                
+                <!--<div class="input-group">
+                    <input type="text" class="form-control" name="textbox" placeholder="Question(Q1)" ng-model="questionNumber" aria-describedby="basic-addon2" required>
+                    <span class="btn input-group-addon" ng-click="getQuestionJSONToEdit(questionNumber)">Press
+                    </span>
+                </div>-->
+            </div>
+            <!-- end of col-md-2 -->
+            <div class="col-md-8 show">
+                <h4>Survey Name : <small>JDPASurvey1</small></h4>
+                <div class="panel panel-info panel-question panel-info-edit-question">
+                    <div class="panel-heading">
+                        <div class="panel-title">{{ questionTitle }}</div>
+                    </div>
+
+                    <div class="panel-body">
+                        <div id="save-alert" class="alert alert-danger col-sm-12">{{message}}</div>
+                        <form class="form-horizontal" name="question_generation_form" role="form" ng-submit="" novalidate>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-lg-2 col-sm-3 control-label">Question</label>
+                                <div class="col-sm-9">
+                                    <textarea id="question-textarea" class="form-control question" rows="5" id="comment" ng-model="question" style="width:100%" required>{{ question }}</textarea>
+                                </div>
+                            </div>
+                            <!-- end of question textarea -->
+
+                            <div id="myTable" class="form-group-input-box" ng-show="true">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-lg-2 col-sm-3 control-label"></label>
+                                    <div class="col-sm-9">
+                                        <div class="col-sm-4" style="padding-left:0px">
+                                            <div class="input-group" id="noOfResponse">
+                                                <input id="no-of-response-input" type="number" min="1" class="form-control" name="textbox" maxlength="2" placeholder="No. of responses" aria-describedby="basic-addon2" ng-model="res1" required>
+                                                <span class="btn input-group-addon" ng-click="generateResponses()">Press
+                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="input-group" id="text-type">
+                                                <span class="input-group-addon" ng-click=""><input type="checkbox" id="is-text-checkbox" ng-model="text_type_checkbox" ng-change="change()">
+                                </span>
+                                                <label class="form-control" name="textbox" aria-describedby="basic-addon2" ng-model="res1" required>isText?</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of myTable -->
+
+                            <div id="response-container">
+                            </div>
+                            <!-- end of response-container -->
+
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-lg-2 col-sm-3 control-label">Condition</label>
+                                <div class="col-sm-9">
+                                    <textarea id="condition-textarea" class="form-control question" ng-model="condition" rows="2" id="comment" style="width:100%" required></textarea>
+                                </div>
+                            </div>
+                            <!-- end of condition textarea -->
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <span class="btn btn-primary glyphicon glyphicon-circle-arrow-left" aria-hidden="true" ng-click="previousQuestion()"></span>
+                                    <span class="btn btn-primary glyphicon glyphicon-circle-arrow-right" aria-hidden="true" ng-click="nextQuestion()"></span>
+                                    <span class="btn btn-primary glyphicon glyphicon-floppy-save" aria-hidden="true" ng-click="saveQuestion()"></span>
+                                </div>
+                                <!-- end of prev next save container -->
+                            </div>
+                        </form>
+                        <!-- end of form -->
+
+                    </div>
+                    <!-- end of panel body -->
+                </div>
+                <!-- end of panel -->
+            </div>
+            <!-- end of col-md-8 -->
+        </div>
+    </div>
+</div>

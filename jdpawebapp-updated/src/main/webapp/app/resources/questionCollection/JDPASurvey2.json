@@ -1,0 +1,60 @@
+{
+  "Q1": {
+    "Question": "question1",
+    "Responses": {
+      "1": {
+        "input_text": "",
+        "value": "a",
+        "input": "radio"
+      },
+      "2": {
+        "input_text": "This is sample data",
+        "value": "b",
+        "input": "Textbox"
+      }
+    },
+    "Condition": "c"
+  },
+  "Q2": {
+    "Question": "question2",
+    "Responses": {
+      "1": {
+        "input_text": "",
+        "value": "d",
+        "input": "radio"
+      },
+      "2": {
+        "input_text": "",
+        "value": "e",
+        "input": "radio"
+      },
+      "3": {
+        "input_text": "",
+        "value": "f",
+        "input": "radio"
+      },
+      "4": {
+        "input_text": "",
+        "value": "g",
+        "input": "radio"
+      }
+    },
+    "Condition": "h"
+  },
+  "Q3": {
+    "Question": "question3",
+    "Responses": {
+      "1": {
+        "input_text": "",
+        "value": "i",
+        "input": "radio"
+      },
+      "2": {
+        "input_text": "",
+        "value": "j",
+        "input": "radio"
+      }
+    },
+    "Condition": "k"
+  }
+}

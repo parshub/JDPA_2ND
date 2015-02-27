@@ -1,0 +1,62 @@
+<div class="row">
+    <!-- header part -->
+    <div class="col-xs-12 col-md-12 btn-back">
+        <a href="#/file/Question" class="pull-right"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span>&nbsp;Back</a>
+    </div>
+</div>
+
+<div class="loginbox">
+    <div class="panel panel-info panel-question panel-info-question">
+        <div class="panel-heading">
+            <div class="panel-title">Q{{ QuestionNumber }}</div>
+        </div>
+
+        <div class="panel-body">
+            <div id="save-alert" class="alert alert-danger col-sm-12">{{message}}</div>
+            <form class="form-horizontal" name="question_generation_form" role="form" ng-submit="" novalidate>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-lg-2 col-sm-3 control-label">Question</label>
+                    <div class="col-sm-9">
+                        <textarea id="question-textarea" class="form-control question" rows="5" id="comment" ng-model="question" style="width:100%" required></textarea>
+                    </div>
+                </div> <!-- end of question textarea -->
+
+                <div id="myTable" class="form-group-input-box" ng-show="true">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-lg-2 col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <div class="col-sm-4" style="padding-left:0px">
+                            <div class="input-group" id="noOfResponse">
+                                <input id="no-of-response-input" type="number" min="1" class="form-control" name="textbox" maxlength="2" placeholder="No. of responses" aria-describedby="basic-addon2" ng-model="res1" required>
+                                <span class="btn input-group-addon" ng-click="generateResponses()">Press
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="input-group" id="text-type">
+                                <span class="input-group-addon" ng-click=""><input type="checkbox" id="is-text-checkbox" ng-model="text_type_checkbox" ng-change="change()">
+                                </span>
+                                <label class="form-control" name="textbox" aria-describedby="basic-addon2" ng-model="res1" required>isMultilevel?</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                    </div>
+                </div> <!-- end of myTable -->    
+                
+                <div id="response-container">
+                </div> <!-- end of response-container -->
+                
+                
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <span class="btn btn-primary glyphicon glyphicon-circle-arrow-left" aria-hidden="true" ng-click="previousQuestion()"></span>
+                        <span class="btn btn-primary glyphicon glyphicon-circle-arrow-right" aria-hidden="true" ng-click="nextQuestion()"></span>
+                        <span class="btn btn-primary glyphicon glyphicon-floppy-save" aria-hidden="true" ng-click="saveQuestion()"></span>
+                    </div> <!-- end of prev next save container -->
+                </div>    
+            </form> <!-- end of form -->
+
+        </div> <!-- end of panel body -->
+    </div><!-- end of panel -->
+    </div>

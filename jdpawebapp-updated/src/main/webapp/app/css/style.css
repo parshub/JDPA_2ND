@@ -1,0 +1,294 @@
+body {
+    padding-top: 5px;
+    margin: 0 auto;
+    text-rendering: optimizeLegibility;
+}
+/*********/
+.nav-pills>li>a {
+/*    padding-bottom: 0px;*/
+    color: #0073AE !important;
+}
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus {
+    background: #EEEEEE;
+    color: #000000 !important;
+}
+.panel-info-edit-question{
+    margin: 0px !important;
+}
+.center-block div{
+    padding-left: 0px;
+}
+.center-block {
+    padding-bottom: 0px !important;
+    padding-left: 0px !important;
+    border: transparent !important; 
+}
+.panel-info-report .panel-body{
+    padding: inherit;
+}
+.panel-info-report {
+    margin: auto !important;
+}
+.panel-heading-mobile {
+	width: 156px;
+	border-top-right-radius: 4px;
+	border: 1px solid transparent;
+}
+.panel-heading-web {
+	width: 156px;
+	border-top-right-radius: 4px;
+	border: 1px solid transparent;
+}
+.panel-strip {
+	background-color: transparent;
+	border: transparent;
+}
+.panel-collapse {
+	background-color: white;
+}
+.panel-info-web {
+    /*margin-top: 18px !important;*/
+    margin: 0 auto !important;
+    max-width: 600px !important;
+    /*margin-left: 22% !important;*/
+}
+.panel-info-mobile {
+    /*margin-top: 18px !important;*/
+    margin: 0 auto !important;
+    max-width: 750px !important;
+    /*margin-left: 15% !important;*/
+    
+}
+.panel-configuration .btn-mobile{
+    border-color: transparent;
+    background-color: transparent;
+}
+.panel-configuration .btn-web{
+    border-color: transparent;
+    background-color: transparent;
+}
+.col-md-8 h3 {
+    margin-top: 0px;
+}
+.jumbotron .row {
+    border: 1px solid gainsboro;
+    padding: 20px;
+}
+.col-md-2-survey-name-container {
+    padding: 0px;
+}
+.col-md-2-testcase-name-container {
+    padding: 0px;
+}
+
+.col-md-2-survey-name-container ul {
+    position: relative;
+}
+
+.glyphicon-play{
+    font-size: 8px !important;
+    margin-bottom: 2px;
+    position: absolute;
+    top:8px;
+}
+
+ul>li>a.list-group-item {
+    margin-top: 3px;
+    background-color: #CCE7F5;
+    cursor: pointer;
+}
+
+ul.nav li ul {
+    position: relative !important;
+    float: none;
+    background: whitesmoke;
+    border: none;
+    box-shadow: none;
+    padding-left: 10%;
+}
+
+ul#survey-name-dropdown {
+    background-color: transparent;
+}
+
+ul#survey-name-dropdown a {
+    cursor: pointer;
+}
+
+ul#testcase-name-dropdown {
+    background-color: transparent;
+}
+
+ul#testcase-name-dropdown a {
+    cursor: pointer;
+}
+
+ul.nav li ul li>a{
+    position: relative;
+    color: #0073AE !important;
+}
+
+ul.nav li.open>a {
+    border-color: transparent !important;
+}
+
+.panel-info-filename {
+    margin-top: 74px !important;
+    margin-left: 20% !important;
+    margin-right: 28% !important;
+    max-width: 374px;
+}
+
+.panel-info-welcome {
+    margin-top: 74px !important;
+    margin-left: 20% !important;
+    margin-right: 28% !important;
+    max-width: 374px;
+}
+
+.panel-info-question {
+    margin-top: 0px !important;
+    margin-left: 20% !important;
+    /*margin-right: auto !important;*/
+    margin-right: 28% !important;
+}
+
+.panel-info-testcase {
+    margin-top: 74px !important;
+    margin-left: 20% !important;
+    margin-right: 28% !important;
+}
+
+.panel-info-run {
+    margin-top: 21px !important;
+    margin-left: 30% !important;
+    margin-right: 28% !important;
+    max-width: 374px;
+}
+.my-sidebar {
+    margin-top: 20px;
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+@media (min-width:768px)
+.main {
+    padding-right: 40px;
+    padding-left:40px;
+}    
+
+.main {
+    padding: 20px;
+    
+}
+
+
+.btn-response-create {
+    padding: 0px !important;
+    margin: auto;
+}
+
+.well {
+    min-width: 100%;
+    background-color: #CCE7F5;
+    background-image: url();
+    min-height: 23px;
+    padding: 0px;
+    margin-bottom: 0px;
+    float: left;
+}
+
+.btn-back {
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.btn-back>a {
+    text-decoration: none;
+}
+#link-to-jenkin {
+
+}
+/*#noOfResponse {
+    width: 10px;
+}
+
+#noOfResponse input {
+    width: 134px;
+}*/
+/*********/
+
+.container {
+    width: auto;
+}
+/*********/
+
+.panel-question {
+    min-width: 50%;
+}
+
+.panel-info {
+    border-color: #bce8f1;
+    /*max-width: 374px;*/
+    margin-top: 74px;
+    margin-left: 17%;
+}
+
+.panel-body {
+    padding-bottom: 37px;
+    padding-top: 37px;
+}
+/********/
+
+.form-forizontal {
+    background-color: #EDEDED;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color: #d2d2d2;
+    border-width: 5px;
+    box-shadow: 0 1px 0 #cfcfcf;
+}
+
+#save-alert {
+    display: none;
+}
+
+#generate-testcase-alert {
+    background: #ffffff !important;
+    border-color: #ffffff !important;
+}
+/********/
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #CCE7F5;
+}
+
+.container .text-muted {
+    margin: 20px 0;
+}

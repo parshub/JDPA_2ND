@@ -1,0 +1,54 @@
+<div class="col-12">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-2 col-md-2-survey-name-container">
+                <select class="form-control">
+                    <option role="presentation" class="dropdown-header">Survey</option>
+                    <option ng-repeat="name in surveyNames">{{ name }}</option>
+                </select>
+            </div>
+            <!-- end of col-md-2 -->
+            <div class="col-md-2 col-md-2-testcase-name-container hide">
+                <select class="form-control">
+                    <option role="presentation" class="dropdown-header default">Testcases</option>
+                    <option ng-repeat="name in testcaseNames">{{ name }}</option>
+                </select>
+            </div>
+            <!-- end of col-md-2 -->
+            <div class="col-md-8 col-md-8-testcase-edit-container hide">
+                <h3>Survey Name : <b class="text-muted">JDPASurvey1</b></h3>
+                <h4>Test Name : <b class="text-muted">{{ tc_name }}</b></h4>
+                <br/>
+                <form class="form-inline">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>Response</th>
+                                <th>Next</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="testcase in testcases">
+                                <td>
+                                    <input type="text" class="form-control" role="question-label" placeholder="" value="{{ testcase.question }}">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" role="response-value" placeholder="" value=" {{ testcase.response }}">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" role="next-question-label" placeholder="" value="{{ testcase.next }}">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- end of table -->
+                    <button class="btn btn-default form-control" role="save" ng-click="saveEditedTestcase()">Save</button>
+                    <button type="reset" class="btn btn-default form-control" role="save">Reset</button>
+                </form>
+                <!-- end of form -->
+            </div>
+            <!-- end of col-md-8 -->
+        </div>
+    </div>
+</div>

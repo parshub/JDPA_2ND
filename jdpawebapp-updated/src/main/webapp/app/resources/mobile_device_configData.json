@@ -1,0 +1,52 @@
+{
+  "Android 5.0": [
+    "Android Emulator"
+  ],
+  "Android 4.4": [
+    "Android Emulator",
+    "Google Nexus 7 HD Emulator",
+    "Google Nexus 7C Emulator",
+    "LG Nexus 4 Emulator",
+    "Samsung Galaxy Nexus Emulator",
+    "Samsung Galaxy S3 Emulator",
+    "Samsung Galaxy S4 Emulator"
+  ],
+  "Android 4.3": [
+    "Android Emulator",
+    "Google Nexus 7 HD Emulator",
+    "Google Nexus 7C Emulator",
+    "LG Nexus 4 Emulator",
+    "Samsung Galaxy Nexus Emulator",
+    "Samsung Galaxy S3 Emulator",
+    "Samsung Galaxy S4 Emulator"
+  ],
+  "Android 4.2": [
+    "Android Emulator",
+    "Google Nexus 7C Emulator",
+    "LG Nexus 4 Emulator",
+    "Samsung Galaxy Nexus Emulator",
+    "Samsung Galaxy S3 Emulator",
+    "Samsung Galaxy S4 Emulator",
+    "Samsung Galaxy Tab 3 Emulator"
+  ],
+  "iOS 8.1": [
+    "iPhone Simulator",
+    "iPad Simulator"
+  ],
+  "iOS 8.0": [
+    "iPhone Simulator",
+    "iPad Simulator"
+  ],
+  "iOS 7.1": [
+    "iPhone Simulator",
+    "iPad Simulator"
+  ],
+  "iOS 7.0": [
+    "iPhone Simulator",
+    "iPad Simulator"
+  ],
+  "iOS 6.1": [
+    "iPhone Simulator",
+    "iPad Simulator"
+  ]
+}

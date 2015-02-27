@@ -1,0 +1,27 @@
+<div class="loginbox" style="padding-left:15%">
+    <div class="panel panel-info panel-info-filename">
+        <div class="panel-heading">
+            <div class="panel-title">JDPA Survey : {{ outputFilename }}</div>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" id="survey-name-form" role="form" ng-submit="">
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-4 control-label">Survey Name: </label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" placeholder="Response" ng-change="change()" aria-describedby="basic-addon2" ng-model="filename" required>
+                        <!--<select id="editSelect" class="form-control" ng-model="filename.name" ng-change="change()" name="filename.name">
+                            <option ng-repeat="name in surveyNames">{{ name }}</option>
+                        </select>-->
+                        <select class="form-control" ng-model='filename' required ng-options='option as option for option in surveyNames' ng-change="change()"></select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-10">
+                        <!--<button type="submit" style="width:219px" class="btn btn-default" ng-click="generateFileName()">Submit</button>-->
+                        <a href="#/{{path}}" style="width:77%" class="btn btn-default btn-submit">Submit</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

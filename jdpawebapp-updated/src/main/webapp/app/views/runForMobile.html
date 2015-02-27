@@ -1,0 +1,166 @@
+<div class="col-12">
+    <div class="jumbotron">
+        <div class="row" ng-show="run_button_hide">
+            <div class="col-md-2 col-md-2-survey-name-container">
+                <select class="form-control">
+                    <option role="presentation" class="dropdown-header">Select Survey</option>
+                    <option ng-repeat="name in surveyNames">{{ name }}</option>
+                </select>
+            </div>
+            <!-- end of col-md-2 -->
+
+            <div class="col-md-10 show">
+                
+                <button class="btn btn-primary btn-mobile" type="button" data-toggle="collapse" data-target="#collapseMobilePanel" aria-expanded="false" aria-controls="collapseMobilePanel">Mobile</button>
+                
+                <div id="collapseMobilePanel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">
+                        <div class="panel panel-info panel-info-mobile">
+                            <div class="panel-heading">
+                                <div class="panel-title">Mobile Configuration</div>
+                            </div>
+                            <div class="panel-body">
+                                <form class="form-horizontal">
+                                    <div class="col-sm-12 table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Platform</th>
+                                                    <th colspan="4">Versions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class="input-group" id="text-type">
+                                                            <span class="input-group-addon"><input type="radio" class="mobile-platform-android" name="mobile-platform" value="Android">
+                                                        </span>
+                                                            <label class="form-control" name="textbox" aria-describedby="basic-addon2" required>Android</label>
+                                                        </div>
+                                                    </th>
+                                                    <td>
+                                                        <div class="input-group" id="text-type">
+                                                            <span class="input-group-addon"><input type="radio" name="mobile-android-version"  value="Android 5.0">
+                                                        </span>
+                                                            <label class="form-control" name="textbox" aria-describedby="basic-addon2" required>5.0</label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="input-group" id="text-type">
+                                                            <span class="input-group-addon"><input type="radio" name="mobile-android-version"  value="Android 4.4">
+                                                        </span>
+                                                            <label class="form-control" name="textbox" aria-describedby="basic-addon2" required>4.4</label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="input-group" id="text-type">
+                                                            <span class="input-group-addon"><input type="radio" name="mobile-android-version"  value="Android 4.3">
+                                                        </span>
+                                                            <label class="form-control" name="textbox" aria-describedby="basic-addon2" required>4.3</label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="input-group" id="text-type">
+                                                            <span class="input-group-addon"><input type="radio" name="mobile-android-version"  value="Android 4.2">
+                                                        </span>
+                                                            <label class="form-control" name="textbox" aria-describedby="basic-addon2" required>4.2</label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">
+                                                        <div class="input-group" id="text-type">
+                                                            <span class="input-group-addon"><input type="radio" class="mobile-platform-ios" name="mobile-platform" value="iOS">
+                                                        </span>
+                                                            <label class="form-control" name="textbox" aria-describedby="basic-addon2" required>iOS</label>
+                                                        </div>
+                                                    </th>
+                                                    <td>
+                                                        <div class="input-group" id="text-type">
+                                                            <span class="input-group-addon"><input type="radio" name="mobile-ios-version"  value="iOS 8.1">
+                                                        </span>
+                                                            <label class="form-control" name="textbox" aria-describedby="basic-addon2" required>8.1</label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="input-group" id="text-type">
+                                                            <span class="input-group-addon"><input type="radio" name="mobile-ios-version"  value="iOS 8.0">
+                                                        </span>
+                                                            <label class="form-control" name="textbox" aria-describedby="basic-addon2" required>8.0</label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="input-group" id="text-type">
+                                                            <span class="input-group-addon"><input type="radio" name="mobile-ios-version"  value="iOS 7.1">
+                                                        </span>
+                                                            <label class="form-control" name="textbox" aria-describedby="basic-addon2" required>7.1</label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="input-group" id="text-type">
+                                                            <span class="input-group-addon"><input type="radio" name="mobile-ios-version"  value="iOS 7.0">
+                                                        </span>
+                                                            <label class="form-control" name="textbox" aria-describedby="basic-addon2" required>7.0</label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- end of responsive table -->
+                                    <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-3 control-label">Device :</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control" name="device-name-select">
+                                                <option ng-repeat="device in devices">{{ device }}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword3" class="col-sm-3 control-label">Device Orientation : </label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control" name="device-orientation-select">
+                                                <option value="portrait">Portrait</option>
+                                                <option value="landscape">Landscape</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                        </div>
+                                    </div>
+                                    <center>
+                                        <button type="button" class="btn btn-default" ng-click="save_mobile_configuration()">Save</button>
+                                    </center>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of mobile panel  -->
+            </div>
+            <!-- end of col-md-10 -->
+        </div>
+        <!-- end of row -->
+        <div class="row" ng-hide="run_button_hide">
+            <div class="col-xs-12 col-md-12 btn-back">
+                <a ng-click="showConfigurationPanel()" class="pull-right"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span>&nbsp;Back</a>
+            </div>
+            <div class="panel panel-info panel-info-run">
+                <div class="panel-heading">
+                    <div class="panel-title">JDPA Survey : Run survey on Jenkins</div>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal" id="survey-name-form" role="form" ng-submit="">
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <a href="http://50.50.50.118:9090/" style="width:77%" class="btn btn-default" target="_blank">Run</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

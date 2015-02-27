@@ -1,0 +1,55 @@
+{
+	"Q1": 
+	{
+		"Question": "",
+		"Responses": 
+		{
+			"1": 
+			{
+				"value": "A"
+			},
+
+			"2": 
+			{
+				"value": "B"
+			}
+
+			
+		}
+	},
+
+	"Q2": 
+	{
+		"Question": "",
+		"Responses": 
+		{
+			"1": 
+			{
+				"value": "X"
+			},
+
+			"2": 
+			{
+				"value": "Y"
+			}
+		}
+	},
+	
+	"Q3": 
+	{
+		"Question": "",
+		"Responses": 
+		{
+			"1": 
+			{
+				"value": "X"
+			},
+
+			"2": 
+			{
+				"value": "Y"
+			}
+		}
+	}
+	
+}

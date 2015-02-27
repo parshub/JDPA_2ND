@@ -1,0 +1,43 @@
+{
+  "Suite": "",
+  "BuildNo": "xxxx—1001",
+  "Date": "xxxx",
+  "StartTime": "xxxx",
+  "EndTime": "xxxx",
+  "TestCases": [
+    {
+      "TC": "TC1",
+      "Status": "xxxx",
+      "Duration": "xxxx",
+      "TestSteps": [
+        {
+          "step": "xxxx",
+          "status": "xxxx",
+          "logInfo": "xxxx"
+        },
+        {
+          "step": "xxxx",
+          "status": "xxxx",
+          "logInfo": "xxxx"
+        }
+      ]
+    },
+    {
+      "TC": "TC2",
+      "Status": "xxxx",
+      "Duration": "xxxx",
+      "TestSteps": [
+        {
+          "step": "xxxx",
+          "status": "xxxx",
+          "logInfo": "xxxx"
+        },
+        {
+          "step": "xxxx",
+          "status": "xxxx",
+          "logInfo": "xxxx"
+        }
+      ]
+    }
+  ]
+}

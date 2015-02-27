@@ -1,0 +1,165 @@
+{
+    "Suite": "Smoke",
+    "BuildNo": "TestResult_XXX-1002",
+    "Date": "2015-01-28",
+    "StartTime": "13:43:04",
+    "EndTime": "13:45:09",
+    "TestCases": [
+        {
+            "TC": "TC1",
+            "Status": "passed",
+            "Duration": "2.05 Sec",
+            "TestSteps": [
+                {
+                    "step": "open browser",
+                    "Status": "passed",
+                    "logInfo": "successfull opened the browser"
+                            },
+                {
+                    "step": "Q1",
+                    "Status": "passed",
+                    "logInfo": "Q1 done successfully"
+                            },
+                {
+                    "step": "Q2",
+                    "Status": "passed",
+                    "logInfo": "Q2 done successfully"
+                            },
+                {
+                    "step": "Q3",
+                    "Status": "passed",
+                    "logInfo": "Q3 done successfully"
+                            },
+                {
+                    "step": "Q4",
+                    "Status": "passed",
+                    "logInfo": "Q4 done successfully"
+                            }
+                        ]
+                    }, {
+            "TC": "TC2",
+            "Status": "passed",
+            "Duration": "2.05 Sec",
+            "TestSteps": [
+                {
+                    "step": "open browser",
+                    "Status": "passed",
+                    "logInfo": "successfull opened the browser"
+                            },
+                {
+                    "step": "Q1",
+                    "Status": "passed",
+                    "logInfo": "Q1 done successfully"
+                            },
+                {
+                    "step": "Q2",
+                    "Status": "passed",
+                    "logInfo": "Q2 done successfully"
+                            },
+                {
+                    "step": "Q3",
+                    "Status": "passed",
+                    "logInfo": "Q3 done successfully"
+                            },
+                {
+                    "step": "Q4",
+                    "Status": "passed",
+                    "logInfo": "Q4 done successfully"
+                            }
+                        ]
+                    }, {
+            "TC": "TC3",
+            "Status": "passed",
+            "Duration": "2.05 Sec",
+            "TestSteps": [
+                {
+                    "step": "open browser",
+                    "Status": "passed",
+                    "logInfo": "successfull opened the browser"
+                            },
+                {
+                    "step": "Q1",
+                    "Status": "passed",
+                    "logInfo": "Q1 done successfully"
+                            },
+                {
+                    "step": "Q2",
+                    "Status": "passed",
+                    "logInfo": "Q2 done successfully"
+                            },
+                {
+                    "step": "Q3",
+                    "Status": "passed",
+                    "logInfo": "Q3 done successfully"
+                            },
+                {
+                    "step": "Q4",
+                    "Status": "passed",
+                    "logInfo": "Q4 done successfully"
+                            }
+                        ]
+                    }, {
+            "TC": "TC4",
+            "Status": "failed",
+            "Duration": "2.05 Sec",
+            "TestSteps": [
+                {
+                    "step": "open browser",
+                    "Status": "passed",
+                    "logInfo": "successfull opened the browser"
+                            },
+                {
+                    "step": "Q1",
+                    "Status": "passed",
+                    "logInfo": "Q1 done successfully"
+                            },
+                {
+                    "step": "Q2",
+                    "Status": "passed",
+                    "logInfo": "Q2 done successfully"
+                            },
+                {
+                    "step": "Q3",
+                    "Status": "passed",
+                    "logInfo": "Q3 done successfully"
+                            },
+                {
+                    "step": "Q4",
+                    "Status": "fialed",
+                    "logInfo": "Q4 done successfully"
+                            }
+                        ]
+                    }, {
+            "TC": "TC5",
+            "Status": "failed",
+            "Duration": "2.05 Sec",
+            "TestSteps": [
+                {
+                    "step": "open browser",
+                    "Status": "passed",
+                    "logInfo": "successfull opened the browser"
+                            },
+                {
+                    "step": "Q1",
+                    "Status": "passed",
+                    "logInfo": "Q1 done successfully"
+                            },
+                {
+                    "step": "Q2",
+                    "Status": "passed",
+                    "logInfo": "Q2 done successfully"
+                            },
+                {
+                    "step": "Q3",
+                    "Status": "passed",
+                    "logInfo": "Q3 done successfully"
+                            },
+                {
+                    "step": "Q4",
+                    "Status": "failed",
+                    "logInfo": "Q4 done successfully"
+                            }
+                        ]
+                    }
+                ]
+}
